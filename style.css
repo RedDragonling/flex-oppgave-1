@@ -1,0 +1,51 @@
+:root {
+  --body-color: #0c47bf;
+  --header-color: #2d63d0;
+  --body-light-color: #9bbafd;
+  --shadow: #00000010;
+  --font-color: #fafff8;
+  --font-special: #fafff8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: var(--font-color);
+}
+
+header {
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    li {
+      list-style: none;
+    }
+  }
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    height: 300px;
+  }
+  &.card-section {
+    background-color: var(--body-light-color);
+  }
+}
