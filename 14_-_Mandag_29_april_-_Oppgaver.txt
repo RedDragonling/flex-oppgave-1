@@ -1,0 +1,28 @@
+Oppgaver
+
+Bruk de semantiske HTML elementene så mye som  mulig
+
+<header>, <nav>, <main>, <section>, <footer> for å dele inn siden i oversiktelige deler.
+
+
+<nav>
+<main>
+<section>
+
+feks.
+
+1) Legg til en nav-bar, som har en tittel til venstre, og 3 linker til høyre. Bruk flexbox. (Tenk gruppering, for å flytte flere elementer sammen til høyre)
+
+2) definer 2 farger som variabler, og benytt disse på siden (det kan feks være bakgrunnsfarge, eller fontfarge)
+
+3) lag en div med klasse 'Card' som en kan style, og bruk 3 slike cards inne i en i <section>. Sett gjerne bakgrunnsfarge, et bilde, en overskrift (Navn) og Beskrivende tekst på hvert kort. Legg gjerne til skyggeeffekt rundt "kortet". Legg også gjerne til en :hover effekt, slik at det er tydelig at musen er over det enkelte kortet.
+
+4) legg til 3 bilder (gjerne flaggene fra tidligere) og spre de utover horisontalt vha en flexbox i <main>
+
+
+
+5)  @mediaquery - når bredden på vinduet blir mindre enn 768px, sett retningen på de 2 nederste flex-boxene (main, og section) til å være vertical i stedet, slik at innholdet kommer under hverandre i stedet.
+
+------------
+
+6 Prøv å gjenskape nettsiden fra eksempelet i leksjonsnotatet. Tenk deg om hvordan du vil benytte flere flexboxer for å gruppere og vise frem de ulike områdene på siden. God planlegging sparer deg for mye arbeid. 
