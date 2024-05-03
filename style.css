@@ -3,8 +3,9 @@
   --header-color: #2d63d0;
   --body-light-color: #9bbafd;
   --shadow: #00000010;
-  --font-color: #fafff8;
-  --font-special: #fafff8;
+  --title-color: #fafff8;
+  --font-color: #bfe9ff;
+  --font-special: #0c47bf;
 }
 
 * {
@@ -18,7 +19,15 @@ body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   min-height: 100vh;
   min-width: 100vw;
+  color: var(--title-color);
+}
+
+p {
   color: var(--font-color);
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 header {
@@ -26,14 +35,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5em 2em;
+  h1 {
+    font-size: 1.5rem;
+  }
   ul {
     display: flex;
     a {
       text-decoration: none;
       font-weight: bold;
+      color: var(--title-color);
+      &:hover {
+        color: var(--font-special);
+      }
     }
     li {
       list-style: none;
+      margin: 0.5em;
     }
   }
 }
@@ -42,10 +60,23 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1em;
   img {
     height: 300px;
   }
   &.card-section {
     background-color: var(--body-light-color);
+    box-shadow: 0 50vh 0 50vh var(--body-light-color);
+    .card {
+      background-color: var(--body-color);
+      box-shadow: 3px 3px 3px var(--shadow);
+      width: 20em;
+      padding: 2em;
+      border-radius: 0.5em;
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5em;
+      }
+    }
   }
 }
